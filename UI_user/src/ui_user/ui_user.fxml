@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="698.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_user.ui_userController">
+   <children>
+      <ImageView fitHeight="404.0" fitWidth="697.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="330.0" layoutY="70.0" prefHeight="388.0" prefWidth="359.0" style="-fx-background-color: #9C2B27;">
+         <children>
+            <JFXTextField fx:id="email" focusColor="#0480d8" layoutX="135.0" layoutY="122.0" prefHeight="25.0" prefWidth="179.0" style="-fx-background-color: #ffffff;" unFocusColor="#b2aaa9" />
+            <JFXPasswordField fx:id="pwd" focusColor="#0480d8" layoutX="139.0" layoutY="194.0" prefHeight="25.0" prefWidth="179.0" unFocusColor="#aba2a2" />
+            <JFXButton fx:id="btn_valider" layoutX="174.0" layoutY="278.0" onMouseClicked="#handleValider" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #BABABA; -fx-border-radius: 4em; -fx-background-radius: 2em; -fx-border-radius: 4em;" text="Valider" textFill="#111010">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <Label layoutX="115.0" layoutY="36.0" prefHeight="27.0" prefWidth="113.0" text="CONNEXION" textFill="#e4e3e3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="128.0" prefHeight="17.0" prefWidth="66.0" text="Email" textFill="#e8dcdc">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="200.0" prefHeight="22.0" prefWidth="89.0" text="Password" textFill="#e8dcdc">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="49.0" fitWidth="57.0" layoutX="289.0" layoutY="18.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="591.0" fitWidth="424.0" layoutX="-101.0" layoutY="7.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/ban.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="231.0" text="Welcome to SaveTime" textFill="#030000" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="271.0" prefHeight="40.0" prefWidth="257.0" text="Eat and save time in one click" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="667.0" layoutY="1.0" onMouseClicked="#handleClose" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/quitter.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="144.0" fitWidth="312.0" layoutX="323.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nothing.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_attention" layoutX="393.0" layoutY="521.0" text="Echec d'authentification !!!" textFill="#ff0b0b" visible="false">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img_attention" fitHeight="49.0" fitWidth="46.0" layoutX="501.0" layoutY="472.0" opacity="0.61" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/attention.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
